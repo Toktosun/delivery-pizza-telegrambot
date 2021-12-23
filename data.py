@@ -19,3 +19,9 @@ class Drink(Product):
         super().__init__(name_pm, price_pm)
         self.volume = volume_pm  # объем
         self.is_gas = is_gas_pm
+
+    def __str__(self):  # когда мы принтует данный объект
+        return f'Наш напиток: {self.name}'
+
+    def __len__(self):
+        return 777
